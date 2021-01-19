@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="fragments/layout :: head">
+        <meta charset="UTF-8" />
+        <title>Layout</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <header th:replace="fragments/layout :: header">
+            <p>menu</p>
+        </header>
+
+        <main>
+            <section class="container">
+                <p>&nbsp;</p>
+                <h2>Hello world</h2>
+                <p>Below, here will be a Bootstrap-styled form.</p>
+            </section>
+
+            <section class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <input type="text" class="form-control"/>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary">Submit!</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <header th:fragment="header">
+            <a th:href="@{/index}">Main page</a> | 
+            <a th:href="@{/list}">List</a> |
+            <a th:href="@{/form}">Form</a>
+        </header>
+
+        <section th:fragment="intro">
+            <h1>Super site!</h1>
+            <p>Super site is one of the best sites on the internet now!</p>
+        </section>
+
+        <footer th:fragment="footer">
+            &copy; Epic web developers paid by the hour!
+        </footer>
+    </body>
+</html>
